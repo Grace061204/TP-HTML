@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Application de ticketing problèmes</title>
+</head>
+<body>
+    <header>
+        <h1>Projet professionnel</h1>
+        <!-- utilisation de la balise nav pour montrer qu'il s'agit du menu de navigation -->
+        <nav id="navigation" aria-label="menu principal">
+            <ul>
+                <li class="navlist"><a href="#">Projet de stage</a></li>
+                <li class="navlist"><a href="#">Application de ticketing problèmes</a></li>
+                <li class="navlist">Présentation</li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <!-- balise section pour l'explication  du projet -->
+        <div class="container">
+            <section class="left">
+                <div id="desc">
+                    <h2>Description du projet</h2>
+                    <p>Le système de gestion des tickets permet de suivre, organiser, résoudre par service et 
+                        utilisateur les problèmes internes rencontrés au sein de chaque service de la douane en temps 
+                        réel.
+                    </p>
+                </div>
+                <figure id="techno">
+                    <img src="assets/image/techno.png" alt="Les technologies utilisées" width="70%">
+                    <figcaption class="technofig">Figure 1: Les technologies utilisées</figcaption>
+                </figure>
+                <article>
+                    <table id="task">
+                        <caption class="task">Quelques tâches lors de la réalisation du projet</caption>
+                        <thead>
+                            <tr class="en">
+                                <th>Tâches</th>
+                                <th>Description</th>
+                                <th>Nbre de jours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="4" class="func">Base de données</td>
+                            </tr>
+                            <tr>
+                                <td>Création de tables et views</td>
+                                <td>3</td>
+
+                            </tr>
+                            <tr>
+                                <td>Requêtes nécessaires</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Insertion de données de test</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="func">CRUD</td>
+                            </tr>
+                            <tr>
+                                <td>Application</td>
+                                <td>1</td>
+
+                            </tr>
+                            <tr>
+                                <td>Thématiques</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+            </section>
+            <section class="right">
+                <div class="video">
+                    <figure role="demo">
+                        <video  height="150" controls>
+                            <source src="assets/video/2025-06-01-13-54-28.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                        <figcaption>Extrait vidéo de démonstration du projet</figcaption>
+                    </figure>
+                </div>
+                <aside>
+                    <form action="" method="post" data-form="inscription" aria-label="inscription utilisateur">
+                        <fieldset>
+                            <legend>Inscrivez vous pour recevoir une démo complète</legend>
+                            <p>
+                                <label for="userName">Nom Utilisateur</label>
+                                <input type="text" name="userName" id="" required>
+                            </p>
+                           <p>
+                               <label for="email">Email</label>
+                               <input type="email" name="email" id="" required>
+                           </p>
+                           <p>
+                               <label for="date">Date d'envoi</label>
+                               <input type="date" name="date" id="" required>
+                           </p>
+                           <p>
+                               <label for="tel">Numéro Téléphone</label>
+                               <input type="number" name="tel" id=""  pattern="[0-9]{10}" required>
+                           </p>
+                            <textarea name="comment" id="" placeholder="Votre commentaire"></textarea>
+                            <input type="button" value="Envoyer">
+                        </fieldset>
+                    </form>
+                </aside>
+
+            </section>
+        </div>
+        <section>
+            <h3>Lieu de présentation officielle du projet</h3>
+
+            <iframe 
+                src="https://www.google.com/maps?q=-18.98601824988085,47.53263085956729&hl=fr&z=15&output=embed"
+                width="100%" 
+                height="450" 
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+           
+        </section>
+
+    </main>
+    <footer>
+       @ Copyright 2025, 1764, TP 
+    </footer>
+</body>
+</html>
