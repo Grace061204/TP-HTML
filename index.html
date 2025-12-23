@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
             </ul>
         </nav>
     </header>
-    <main role="main">
+    <main>
         <!-- balise section pour l'explication  du projet -->
         <div class="container">
             <section class="left">
@@ -30,12 +30,12 @@
                     </p>
                 </div>
                 <figure id="techno">
-                    <img src="assets/image/techno.png" alt="Les technologies utilisées" width="70%">
+                    <img src="assets/image/techno.png" alt="Les technologies utilisées" >
                     <figcaption class="technofig">Figure 1: Les technologies utilisées</figcaption>
                 </figure>
                 <article>
-                    <table id="task">
-                        <caption class="task">Quelques tâches lors de la réalisation du projet</caption>
+                    <h3 class="task">Quelques tâches lors de la réalisation du projet</h3>
+                    <table id="task" role="list">
                         <thead>
                             <tr class="en">
                                 <th>Tâches</th>
@@ -79,7 +79,7 @@
             </section>
             <section class="right">
                 <div class="video">
-                    <figure role="demo">
+                    <figure>
                         <video  height="150" controls>
                             <source src="assets/video/2025-06-01-13-54-28.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la lecture de vidéos.
@@ -88,26 +88,26 @@
                     </figure>
                 </div>
                 <aside>
-                    <form action="" method="post" data-form="inscription" aria-label="inscription utilisateur">
+                    <form action="#" method="post" data-form="inscription" aria-label="inscription utilisateur">
                         <fieldset>
                             <legend>Inscrivez vous pour recevoir une démo complète</legend>
                             <p>
                                 <label for="userName">Nom Utilisateur</label>
-                                <input type="text" name="userName" id="" required>
+                                <input type="text" name="userName" id="userName" required>
                             </p>
                            <p>
                                <label for="email">Email</label>
-                               <input type="email" name="email" id="" required>
+                               <input type="email" name="email" id="email" required>
                            </p>
                            <p>
                                <label for="date">Date d'envoi</label>
-                               <input type="date" name="date" id="" required>
+                               <input type="date" name="date" id="date" required>
                            </p>
                            <p>
                                <label for="tel">Numéro Téléphone</label>
-                               <input type="number" name="tel" id=""  pattern="[0-9]{10}" required>
+                               <input type="tel" name="tel" id="tel"  pattern="[0-9]{10}" required>
                            </p>
-                            <textarea name="comment" id="" placeholder="Votre commentaire"></textarea>
+                            <textarea name="comment" id="comment" placeholder="Votre commentaire"></textarea>
                             <input type="button" value="Envoyer">
                         </fieldset>
                     </form>
@@ -118,10 +118,9 @@
         <section>
             <h3>Lieu de présentation officielle du projet</h3>
 
-            <iframe 
+            <iframe id="map"
                 src="https://www.google.com/maps?q=-18.98601824988085,47.53263085956729&hl=fr&z=15&output=embed"
-                width="100%" 
-                height="450" 
+                
                 allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">

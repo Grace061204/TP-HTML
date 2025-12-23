@@ -31,6 +31,10 @@ header {
   width: 100%;
 }
 
+#techno img{
+  width:70%;
+}
+
 #task{
   width: 100%;
   /* border: 1px solid #000; */
@@ -72,6 +76,13 @@ tr > td:last-child {
 }
 .video{
   margin-left: 28%;
+}
+
+iframe{
+  width: 100%;       /* prend toute la largeur du conteneur */
+    height: 450px;     /* hauteur souhaitée */
+    border: 0;
+    display: block;
 }
 form[data-form="inscription"] {
   max-width: 320px;      
