@@ -72,16 +72,16 @@ tr > td:last-child {
 }
 .video{
   margin-left: 28%;
-}/* Formulaire container très compact */
+}
 form[data-form="inscription"] {
-  max-width: 320px;       /* largeur réduite */
-  margin: 20px auto;      /* centré horizontalement */
+  max-width: 320px;      
+  margin: 20px auto;      
   padding: 15px;
-  border: 1px solid #ccc; /* bordure */
+  border: 1px solid #ccc; 
   border-radius: 6px;
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
-  font-size: 0.9em;       /* texte un peu plus petit */
+  font-size: 0.9em;       
 }
 
 /* Fieldset et legend */
@@ -96,20 +96,19 @@ form[data-form="inscription"] legend {
   margin-bottom: 10px;
 }
 
-/* Paragraphes contenant les labels et inputs */
+
 form[data-form="inscription"] p {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
 }
 
-/* Labels */
+
 form[data-form="inscription"] label {
   margin-bottom: 3px;
   font-weight: 600;
 }
 
-/* Inputs et textarea */
 form[data-form="inscription"] input[type="text"],
 form[data-form="inscription"] input[type="email"],
 form[data-form="inscription"] input[type="date"],
@@ -123,7 +122,7 @@ form[data-form="inscription"] textarea {
   font-size: 0.9em;
 }
 
-/* Bouton */
+
 form[data-form="inscription"] input[type="button"] {
   margin-top: 6px;
   padding: 6px 10px;
@@ -135,12 +134,12 @@ form[data-form="inscription"] input[type="button"] {
   font-size: 0.9em;
 }
 
-/* Bouton hover */
+
 form[data-form="inscription"] input[type="button"]:hover {
   background-color: #45a049;
 }
 
-/* Focus pour accessibilité clavier */
+
 form[data-form="inscription"] input:focus,
 form[data-form="inscription"] textarea:focus {
   outline: 2px solid #4CAF50;
